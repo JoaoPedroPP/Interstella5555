@@ -1,0 +1,16 @@
+{
+  "name": "interstella5555",
+  "version": "1.0.0",
+  "description": "Web site with the interestella5555 picture",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "JoaoPedroPP",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
