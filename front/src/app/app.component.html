@@ -1,0 +1,7 @@
+<div class="imgdiv">
+  <img src="../assets/logo.png" class="img" (click)="reset()" />
+</div>
+<div class="bts">
+  <app-choice *ngIf="!content" (videoType)="selectContent($event)"></app-choice>
+  <app-video *ngIf="content" [video]='video_id'></app-video>
+</div>

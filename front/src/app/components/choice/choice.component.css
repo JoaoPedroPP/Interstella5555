@@ -1,0 +1,25 @@
+.bts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ali {
+    text-align: center;
+}
+
+
+.ButtonChoice {
+    height: 4rem;
+    width: 16rem;
+    margin: 0.5rem;
+
+    background-color: #32394e;
+    border-radius: 0.5rem;
+    /* border: 5px solid red; */
+}
+
+h3 {
+    color: white;
+}
