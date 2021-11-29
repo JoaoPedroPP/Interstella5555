@@ -4,7 +4,7 @@ WORKDIR /usr/builder
 
 COPY . /usr/builder
 
-RUN cd frontA && \
+RUN cd interestella5555 && \
     npm install && \
     npm run prod
 
@@ -17,7 +17,7 @@ COPY . ./
 RUN npm install
 
 COPY --from=FRONT \
-    /usr/builder/frontA/dist/frontA /usr/app/public
+    /usr/builder/interestella5555/dist/interestella5555 /usr/app/public
 
 ENV PORT=8080
 

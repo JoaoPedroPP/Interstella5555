@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "frontA": {
+    "interestella5555": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/frontA",
+            "outputPath": "dist/interestella5555",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "frontA:build"
+            "browserTarget": "interestella5555:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "frontA:build:production"
+              "browserTarget": "interestella5555:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "frontA:build"
+            "browserTarget": "interestella5555:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "frontA:serve"
+            "devServerTarget": "interestella5555:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "frontA:serve:production"
+              "devServerTarget": "interestella5555:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "frontA"
+  "defaultProject": "interestella5555"
 }
