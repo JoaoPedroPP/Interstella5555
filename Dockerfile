@@ -2,22 +2,21 @@ FROM node:lts-alpine as FRONT
 
 WORKDIR /usr/builder
 
-COPY . /usr/builder
+COPY interstella5555 .
 
-RUN cd interstella5555 && \
-    npm install && \
+RUN npm install && \
     npm run prod
 
 FROM node:lts-alpine
 
 WORKDIR /usr/app
 
-COPY app.js package* .
+COPY app.js package* LICENSE .
 
 RUN npm install
 
 COPY --from=FRONT \
-    /usr/builder/interstella5555/dist/interestella5555 /usr/app/public
+    /usr/builder/dist/interstella5555 /usr/app/public
 
 ENV PORT=8080
 

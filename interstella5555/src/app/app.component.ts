@@ -7,7 +7,7 @@ import { VideosService } from './services/videos.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Interestella5555';
+  title = 'Interstella5555';
   content = false;
   video_id: string;
   y: any;

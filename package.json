@@ -1,7 +1,7 @@
 {
   "name": "interstella5555",
   "version": "1.0.0",
-  "description": "Web site with the interestella5555 picture",
+  "description": "Web site with the interstella5555 picture",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JoaoPedroPP/Interestella5555.git"
+    "url": "git+https://github.com/JoaoPedroPP/Interstella5555.git"
   },
   "author": "JoaoPedroPP",
   "license": "MIT",
