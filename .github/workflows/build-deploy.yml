@@ -1,4 +1,4 @@
-name: Docker Build and IBM Cloud Deploy
+name: Build
 
 on:
   push:
@@ -21,4 +21,4 @@ jobs:
     - name: Push to Docker Hub
       run: docker push joaopedropp/interstella5555
 
-      
+
