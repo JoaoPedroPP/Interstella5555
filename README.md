@@ -15,10 +15,10 @@ The official music video for each track of the album are parts of the picture, a
 
 Thei idea of the project was to promote to the fan a website where they can enjoy Daft Punk work on Interstella 5555 and Discovery album. The site is a page where the user can choose how they want to watch videos, in sequence or random order.
 
-Visit the project on: [bit.ly/discovery-interstella5555](https://bit.ly/discovery-interstella5555), make your choice and enjoy an audio and video experience by Daft Punk :)
+Visit the project on: [bit.ly/daftpunk-interstella5555](https://bit.ly/daftpunk-interstella5555), make your choice and enjoy an audio and video experience by Daft Punk :)
 
 <div>
-    <a href="https://bit.ly/discovery-interstella5555" target="blank">
+    <a href="https://bit.ly/daftpunk-interstella5555" target="blank">
         <img src="./support_files/start_page.png" alt="web-page" />
     </a>
 </div>
