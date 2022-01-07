@@ -11,7 +11,7 @@ FROM node:lts-alpine
 
 WORKDIR /usr/app
 
-COPY app.js package* LICENSE README.md .
+COPY app.js package* LICENSE README.md ./
 
 RUN npm install
 
