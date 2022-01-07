@@ -1,3 +1,4 @@
+![build](https://github.com/joaopedropp/Interstella5555/actions/workflows/build-deploy/badge.svg)
 # Interstella5555
 
 This project is just my way of honoring the french duo that for long made me happy and still making. 
