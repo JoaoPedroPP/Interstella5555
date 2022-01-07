@@ -10,10 +10,15 @@ jobs:
   Docker:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@main
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag joaopedropp/interstella5555
     - name: Docker Login
-      run: docker login -u joaopedropp -p ${{ secrets.DOCKER_PASSWORD }}
+      uses: docker/login-action@main
+      with:
+        username: joaopedropp
+        password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Push to Docker Hub
       run: docker push joaopedropp/interstella5555
+
+      
