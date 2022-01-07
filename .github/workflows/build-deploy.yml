@@ -14,9 +14,6 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag joaopedropp/interstella5555
     - name: Docker Login
-      uses: docker/login-action
-      with:
-        username: joaopedropp
-        password: ${{ secrect.secrets.DOCKER_PASSWORD }}
+      run: docker login -u joaopedropp -p ${{ secrets.DOCKER_PASSWORD }}
     - name: Push to Docker Hub
       run: docker push joaopedropp/interstella5555
