@@ -1,0 +1,6 @@
+---
+applications:
+- name: Interstella5555
+  memory: 64M
+  docker:
+    image: joaopedropp/interstella5555
