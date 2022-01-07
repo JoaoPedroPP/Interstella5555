@@ -10,16 +10,27 @@ jobs:
   Docker:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@main
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag joaopedropp/interstella5555
-    - name: Docker Login
-      uses: docker/login-action@v1
-      with:
-        username: joaopedropp
-        password: ${{ secrets.DOCKER_PASSWORD }}
-    - name: Push to Docker Hub
-      run: docker push joaopedropp/interstella5555
-
+      - uses: actions/checkout@v2
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag joaopedropp/interstella5555
+      - name: Docker Login
+        uses: docker/login-action@v1
+        with:
+          username: joaopedropp
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Push to Docker Hub
+        run: docker push joaopedropp/interstella5555
+  IBM:
+    runs-on: ubuntu-latest
+    needs: Docker
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy
+        uses: IBM/cloudfoundry-deploy@master
+        with:
+          IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
+          IBM_CLOUD_CF_API: ${{ secrets.IBM_CLOUD_CF_API }}
+          IBM_CLOUD_CF_ORG: ${{ secrets.IBM_CLOUD_CF_ORG }}
+          IBM_CLOUD_CF_SPACE: ${{ secrets.IBM_CLOUD_CF_SPACE }}
 
 
